@@ -14,7 +14,6 @@ Créer un agent qui participera à des projets GitHub open source.
 - `_contexte/` : protocole vibecoding (`contexte.md`, `signals.md`)
 
 ## État actuel
-Structure du projet en place : `.claude/commands/analyse-prs.md` (classement des PR candidates),
-`.opencode/commands/` (miroir pour OpenCode), `participations/` (clones par projet, contient
-OpenCode). Projets prioritaires définis : Ollama, RustDesk, Tesseract-OCR, OpenCode. Commande
-`/analyse-prs` créée mais pas encore exécutée.
+Projets prioritaires définis : Ollama, RustDesk, Tesseract-OCR, OpenCode. `/analyse-prs` exécuté
+le 2026-08-04 : classement des issues candidates produit sur les 4 repos. Meilleure cible retenue :
+rustdesk/rustdesk #3762 (audio ASIO). Aucune PR lancée, en attente d'approbation utilisateur.

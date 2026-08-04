@@ -7,9 +7,9 @@ Créer un agent qui participera à des projets GitHub open source.
 À définir (préciser ultérieurement).
 
 ## État actuel (réécrit intégralement à chaque /close)
-Structure du projet en place : `.claude/commands/analyse-prs.md` (classement des PR candidates),
-`.opencode/commands/` (miroir pour OpenCode), `participations/` (clones par projet, contient
-OpenCode). Projets prioritaires définis. Commande /analyse-prs créée mais pas encore exécutée.
+/analyse-prs exécuté le 2026-08-04 sur les 4 repos prioritaires : classement des issues produit.
+Meilleure cible : rustdesk/rustdesk #3762 (audio ASIO, 6/10), en attente d'approbation utilisateur.
+sst/opencode : aucune issue "good first issue" ni "help wanted" ouverte. Aucune PR lancée pour l'instant.
 
 ## Décisions structurantes (append only — 10 entrées max, 5 lignes max/entrée, archiver au-delà)
 - 2026-08-04 : Initialisation du protocole vibecoding.

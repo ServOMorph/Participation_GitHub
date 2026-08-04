@@ -1,34 +1,28 @@
 # Signals — participation_github   (MAJ 2026-08-04)
 
 ## Actions ouvertes
-- [P1|ouvert] Lancer /analyse-prs sur les projets prioritaires pour choisir une première PR
-  fait quand: un tableau de classement des issues est produit et une PR est choisie
-  réf: .claude/commands/analyse-prs.md, _DOCS/projets_candidats.md
+- [P1|ouvert] Choisir et lancer la première PR — classement produit le 2026-08-04, recommande rustdesk #3762
+  fait quand: une PR est ouverte par nos soins sur un repo prioritaire
+  réf: _DOCS/projets_candidats.md, analyse /analyse-prs 2026-08-04, rustdesk/rustdesk #3762
 
 ## Dernière session (2026-08-04)
 <!-- Écrasé intégralement par /close. Synthèse < 25 lignes. -->
 # Session du 2026-08-04
 
 ## Décisions prises
-- Repo GitHub ServOMorph/opencode supprimé (fork obsolète)
-- Projets prioritaires retenus : Ollama, RustDesk, Tesseract-OCR, OpenCode
-- Nom "commands" (pluriel) confirmé pour .opencode/commands, malgré la convention "command" du repo OpenCode cloné
-- Nom "participations" retenu pour le dossier racine regroupant les clones par projet
+- Aucune décision de poursuite actée : la recommandation (rustdesk #3762) attend l'approbation utilisateur.
 
 ## Livrables produits ou modifiés
-- .claude/commands/analyse-prs.md : créé
-- .opencode/commands/ : créé (copie de .claude/commands)
-- _DOCS/projets_candidats.md : créé, section priorités ajoutée
-- _contexte/contexte.md : décisions de session ajoutées
-- participations/OpenCode/ : déplacé depuis la racine, .git imbriqué supprimé au préalable
+- Exécution de /analyse-prs sur les 4 projets prioritaires : classement des issues candidates produit (aucun fichier modifié).
 
 ## Hypothèses validées / invalidées
-- VALIDE : structure .opencode/commands (pluriel) confirmée par l'utilisateur
-- EN ATTENTE : exécution de /analyse-prs sur les 4 projets prioritaires
+- VALIDE : /analyse-prs exécutable sur ollama, rustdesk, tesseract, sst/opencode.
+- VALIDE : sst/opencode n'a aucune issue "good first issue" ni "help wanted" ouverte.
+- INVALIDE -> pivot : aucune issue des 4 repos n'est une cible franche (concurrence forte, spec faible ou tâche massive) ; meilleure cible prudente = rustdesk #3762 (6/10).
 
 ## Prochaine étape exacte
-Lancer /analyse-prs pour obtenir le classement des issues candidates sur Ollama, RustDesk,
-Tesseract-OCR, OpenCode, puis choisir la première contribution.
+Attendre la confirmation utilisateur sur rustdesk #3762 (audio ASIO). Si OK : étude de l'opportunité
+(lecture audio_service.rs, estimation de l'effort) avant tout fork/clone.
 
 ## Question bloquante pour la session suivante
-Aucune
+Poursuivre rustdesk #3762 (audio ASIO) pour la première contribution, ou écarter le lot ?
