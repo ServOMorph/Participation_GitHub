@@ -1,0 +1,1 @@
+crée un agent qui participera à des projets github opensource
