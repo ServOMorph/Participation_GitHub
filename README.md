@@ -1,4 +1,4 @@
-# Participation GitHub
+﻿# Participation GitHub
 
 ## Objectif
 Créer un agent qui participera à des projets GitHub open source.
@@ -14,6 +14,5 @@ Créer un agent qui participera à des projets GitHub open source.
 - `_contexte/` : protocole vibecoding (`contexte.md`, `signals.md`)
 
 ## État actuel
-Projets prioritaires définis : Ollama, RustDesk, Tesseract-OCR, OpenCode. `/analyse-prs` exécuté
-le 2026-08-04 : classement des issues candidates produit sur les 4 repos. Meilleure cible retenue :
-rustdesk/rustdesk #3762 (audio ASIO). Aucune PR lancée, en attente d'approbation utilisateur.
+Dépôt public actuel suivi : argosopentech/argos-translate. Analyse du 2026-08-17 : projet de traduction hors ligne en Python, CLI + packages de langue + modèles .argosmodel. L’issue #500 est la piste de contribution la plus concrète identifiée ; pas encore de clone local ni de branche de travail.
+

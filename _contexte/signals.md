@@ -1,28 +1,32 @@
-# Signals — participation_github   (MAJ 2026-08-04)
+﻿# Signals — participation_github   (MAJ 2026-08-17)
 
 ## Actions ouvertes
-- [P1|ouvert] Choisir et lancer la première PR — classement produit le 2026-08-04, recommande rustdesk #3762
-  fait quand: une PR est ouverte par nos soins sur un repo prioritaire
-  réf: _DOCS/projets_candidats.md, analyse /analyse-prs 2026-08-04, rustdesk/rustdesk #3762
+- [P1|ouvert] Suivre et évaluer le repo public argosopentech/argos-translate pour une contribution
+  fait quand: le repo est cloné localement et un bug de régression est reproductible en test
+  réf: https://github.com/argosopentech/argos-translate, issue GitHub #500
+- [P2|ouvert] Reproduire le bug de régression de la version 1.10 sur la commande CLI de traduction
+  fait quand: la commande "argos-translate --from en --to it ..." reproduit les warnings "Unsupported language: tl/eo/az/ms"
+  réf: issue GitHub #500, README du dépôt, code de validation des langues
 
-## Dernière session (2026-08-04)
-<!-- Écrasé intégralement par /close. Synthèse < 25 lignes. -->
-# Session du 2026-08-04
+## Dernière session (2026-08-17)
+# Session du 2026-08-17
 
 ## Décisions prises
-- Aucune décision de poursuite actée : la recommandation (rustdesk #3762) attend l'approbation utilisateur.
+- CIBLE ACTÉE : suivre argosopentech/argos-translate comme dépôt de contribution principal pour cette session.
+- CIBLE ACTÉE : l’issue #500 est la piste de contribution la plus concrète signalée dans le flux de travail actuel.
 
 ## Livrables produits ou modifiés
-- Exécution de /analyse-prs sur les 4 projets prioritaires : classement des issues candidates produit (aucun fichier modifié).
+- Analyse du dépôt public Argos Translate : identification du projet comme traduction hors ligne en Python, CLI + API + modèles.
+- Vérification locale : aucun clone ni code Argos présent dans ce workspace ; le dépôt est suivi via le repo public.
 
 ## Hypothèses validées / invalidées
-- VALIDE : /analyse-prs exécutable sur ollama, rustdesk, tesseract, sst/opencode.
-- VALIDE : sst/opencode n'a aucune issue "good first issue" ni "help wanted" ouverte.
-- INVALIDE -> pivot : aucune issue des 4 repos n'est une cible franche (concurrence forte, spec faible ou tâche massive) ; meilleure cible prudente = rustdesk #3762 (6/10).
+- VALIDE : le dépôt Argos Translate est bien un projet open source de traduction offline en Python.
+- VALIDE : les informations de l’issue #500 sont suffisantes pour établir un bug de régression plausible.
+- EN ATTENTE : reproduction locale du bug et validation de la piste de correctif dans le code du repo.
 
 ## Prochaine étape exacte
-Attendre la confirmation utilisateur sur rustdesk #3762 (audio ASIO). Si OK : étude de l'opportunité
-(lecture audio_service.rs, estimation de l'effort) avant tout fork/clone.
+Cloner le dépôt public argosopentech/argos-translate dans `participations/` ou dans un dossier local dédié.
+Puis reproduire le cas issue #500 (en -> it) et identifier la validation des langues / le point de ralentissement avant d’ouvrir une PR.
 
 ## Question bloquante pour la session suivante
-Poursuivre rustdesk #3762 (audio ASIO) pour la première contribution, ou écarter le lot ?
+Le bug est-il bien causé par la validation de langue “unsupported language” en 1.10, ou le ralentissement vient d’un autre point du pipeline de traduction ?

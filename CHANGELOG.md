@@ -1,3 +1,9 @@
+﻿## v0.3 — 2026-08-17
+
+### Modifié
+- Cible principale de contribution fixée sur argosopentech/argos-translate
+- Analyse du dépôt public : projet de traduction offline en Python, CLI + API + modèles
+- Issue GitHub #500 retenue comme piste prioritaire pour la prochaine contribution
 ## v0.2 — 2026-08-04
 
 ### Modifié
@@ -12,3 +18,4 @@
 - Commande `/analyse-prs` : classement des issues candidates par projet
 - Structure OpenCode : `.opencode/commands/`, dossier `participations/` (clones par projet)
 - Suppression du fork GitHub `ServOMorph/opencode` (obsolète)
+

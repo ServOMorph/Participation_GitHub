@@ -1,4 +1,4 @@
-# Contexte — participation_github
+﻿# Contexte — participation_github
 
 ## Objectif (immuable sauf décision explicite)
 Créer un agent qui participera à des projets GitHub open source.
@@ -7,12 +7,9 @@ Créer un agent qui participera à des projets GitHub open source.
 À définir (préciser ultérieurement).
 
 ## État actuel (réécrit intégralement à chaque /close)
-/analyse-prs exécuté le 2026-08-04 sur les 4 repos prioritaires : classement des issues produit.
-Meilleure cible : rustdesk/rustdesk #3762 (audio ASIO, 6/10), en attente d'approbation utilisateur.
-sst/opencode : aucune issue "good first issue" ni "help wanted" ouverte. Aucune PR lancée pour l'instant.
+Dépôt public actuel suivi : argosopentech/argos-translate. Analyse du 2026-08-17 : projet de traduction hors ligne en Python, CLI + packages de langue + modèles .argosmodel. L’issue #500 est la piste de contribution la plus concrète identifiée ; pas encore de clone local ni de branche de travail.
 
 ## Décisions structurantes (append only — 10 entrées max, 5 lignes max/entrée, archiver au-delà)
-- 2026-08-04 : Initialisation du protocole vibecoding.
-- 2026-08-04 : Projets prioritaires retenus pour la participation : Ollama, RustDesk, Tesseract-OCR, OpenCode.
-- 2026-08-04 : Suppression du fork GitHub ServOMorph/opencode (obsolète).
-- 2026-08-04 : Structure OpenCode mise en place : `.opencode/commands` (pluriel, copie de `.claude/commands`), dossier `participations/` pour les clones par projet.
+- 2026-08-17 : Suivi de la cible argosopentech/argos-translate comme dépôt principal pour la prochaine contribution.
+- 2026-08-17 : L’issue #500 est la piste d’investissement prioritaire ; elle décrit une régression plausible sur la validation des langues / la vitesse de traduction.
+- 2026-08-17 : Le projet n’est pas encore cloné dans ce workspace ; le dépôt public est la source de référence pour l’analyse.
